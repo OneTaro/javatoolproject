@@ -163,7 +163,7 @@ public class DESUtils2 {
                 pwd = args[0];
             }
             if ("".equals(pwd)) {
-                pwd = "2013Bcom";
+                pwd = "wangsusu@wang521";
             }
             System.out.println("加密前："+pwd);
 
@@ -172,13 +172,6 @@ public class DESUtils2 {
 
             String j = decrypt(hex, "HRIRkT7bG4sifhszwmosXJPlxYulXXhR");
             System.out.println("解密后："+j);
-
-            String hex1 = encrypt(pwd, "12345678912345678912345678912345");
-            System.out.println("加密后："+hex1);
-
-            String j1 = decrypt(hex1, "12345678912345678912345678912345");
-            System.out.println("解密后："+j1);
-
 
         }catch(Exception e){
             e.printStackTrace();
